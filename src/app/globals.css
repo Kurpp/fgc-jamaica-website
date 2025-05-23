@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-jmyellow: #FED100;
+  --font-roboto: 'Helvetica', sans-serif;
+}
+
+body {
+  background: #00875b;
+  color: #e3e4e8;
+  background: linear-gradient(335deg, rgba(0, 155, 58, 1) 0%, #ffc322 50%, #000000 100%);
+
+  font-family: 'Poppins', sans-serif;
+}
