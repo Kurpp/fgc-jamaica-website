@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import Navigation from "@/components/core/navbar";
-import { ReactElement, useState, useEffect } from "react";
+import { ReactElement } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa"
 
 const greetings = [
@@ -73,15 +73,15 @@ export default function Home() {
                   )
                 }
                 wrapper="span"
-                // @ts-ignore some stupid typedef
+                // @ts-expect-error some stupid typedef
                 speed={175}
                 repeat={Infinity}
               />
-              <span>We're FIRST Global Jamaica!</span>
+              <span>We&apos;re FIRST Global Jamaica!</span>
             </div>
             <span className="max-w-175">A group of young, passionate highschool students, who strive for excellence in aquiring new skills.</span>
             <Link href="/contact" className="flex items-center hover:underline transition active:translate-y-0.5">
-              Get in Touch! We're waiting!&nbsp;<FaLongArrowAltRight />
+              Get in Touch! We&apos;re waiting!&nbsp;<FaLongArrowAltRight />
             </Link>
           </div>
 
