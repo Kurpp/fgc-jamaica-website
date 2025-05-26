@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ReactElement, useState, useEffect } from "react";
+import { ReactElement, useState, useEffect, Key } from "react";
 
-function link(text: string, href: string, location: string, key: any): ReactElement {
+function link(text: string, href: string, location: string, key: Key): ReactElement {
     return (
         <Link key={key} className={`${"/" + location.split("/").pop() == href ? "text-blue-400 cursor-not-allowed" : "hover:text-blue-400 transition active:translate-y-1/30"}`} href={href}>{text}</Link>
     )

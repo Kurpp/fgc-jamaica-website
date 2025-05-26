@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import Navigation from "@/components/core/navbar";
+import { HTMLInputTypeAttribute } from "react";
 
-const InputField = ({ label, name, type = "text", placeholder, isTextArea = false }: { label: string, name: string, type?: any, placeholder: string, isTextArea?: boolean }) => (
+const InputField = ({ label, name, type = "text", placeholder, isTextArea = false }: { label: string, name: string, type?: HTMLInputTypeAttribute, placeholder: string, isTextArea?: boolean }) => (
     <div className="flex flex-col gap-1">
         <span>{label}</span>
         {isTextArea ? (
